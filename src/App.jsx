@@ -1,26 +1,12 @@
 import Button from "./Components/Button/Button";
+import TextInput from "./Components/TextInput/TextInput";
+import TextInputForm from "./Components/TextInputForm/TextInputForm";
 
 function App() {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-slate-900">Hello!</h1>
-      <Button
-        text="Primary"
-        btnType="submit"
-        styleType="primary"
-        onClickFn={function logHello() {
-          console.log("Primary Clicked");
-        }}
-      />
-      <Button
-        text="Secondary"
-        btnType="button"
-        styleType="secondary"
-        onClickFn={function logHello() {
-          console.log("Secondary Clicked");
-        }}
-      />
-      <Button text="Warning" />
+      <h1 className="text-4xl font-bold text-slate-900 mb-3">Welcome to Hangman!</h1>
+     <TextInputForm onSubmit={(value)=>{console.log(`Value submited is ${value}`)}}/>
     </div>
   );
 }
