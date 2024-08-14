@@ -1,11 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import "./StartGameStyle.css"
+import TextInputFormContainer from '../../Components/TextInputForm/TextInputFormContainer'
+import { useNavigate } from 'react-router-dom'
+
+
+
 
 function StartGame() {
+
+
+  const navigator = useNavigate();
+
+  function handleSubmit (){
+    navigator("/play")
+  }
+
+
+
   return (
     <div>
-      <h1>Start Game</h1>
-      <Link to={"/play"}>Go to Play Game</Link>
+      <h1 style={{color:"red"}}>Start Game</h1>
+      <TextInputFormContainer onSubmit={handleSubmit}/>
     </div>
   )
 }

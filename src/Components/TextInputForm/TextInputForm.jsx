@@ -9,7 +9,7 @@ function TextInputForm({handleFormSubmit, handleTextInputChange, visiable, value
 
 
   return (
-    <form className='flex items-end mx-4 gap-3' onSubmit={handleFormSubmit}>
+    <form className='flex items-end gap-3' onSubmit={handleFormSubmit}>
 
 
 
