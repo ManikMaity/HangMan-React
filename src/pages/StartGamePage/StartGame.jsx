@@ -18,7 +18,7 @@ function StartGame() {
 
 
   return (
-    <div>
+    <div className='start-game'>
       <h1 style={{color:"red"}}>Start Game</h1>
       <TextInputFormContainer onSubmit={handleSubmit}/>
     </div>
