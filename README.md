@@ -1,5 +1,6 @@
 # Hangman Game
 
+
 A classic Hangman game built using React, with multiple features like word submission, a virtual keyboard, and a dynamic hangman image. This game allows two players to interact: one enters a word, and the other tries to guess it.
 
 ## Features
@@ -21,7 +22,7 @@ A classic Hangman game built using React, with multiple features like word submi
 - React
 - React Router DOM
 
-## [Live Website](https://hangman-manikmaity.netlify.app/start);
+## [Live Website](https://hangman-manikmaity.netlify.app);
 
 
 
