@@ -21,7 +21,7 @@ A classic Hangman game built using React, with multiple features like word submi
 - React
 - React Router DOM
 
-## [Live Website]
+## [Live Website](https://hangman-manikmaity.netlify.app/start);
 
 
 
