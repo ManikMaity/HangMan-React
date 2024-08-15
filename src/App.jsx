@@ -1,14 +1,23 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import PlayGame from "./pages/PlayGamePage/PlayGame";
 import StartGame from "./pages/StartGamePage/StartGame";
+import Button from "./Components/Button/Button";
 
 function App() {
+
+  const navigator = useNavigate();
+
+
   return (
     <>
-    <h1>Navbar</h1>
+    <div className="w-full text-3xl px-3 h-[40px] grid place-content-center bg-slate-800 text-center text-white font-bold">
+      <h1>Hang Man Game</h1>
+    </div>
+
     <Routes>
       <Route path="/play" element={<PlayGame/>}/>
       <Route path="/start" element={<StartGame/>} />
+      <Route path="*" element={<Navigate to="/start" />} />
     </Routes>
     </>
     // <div>

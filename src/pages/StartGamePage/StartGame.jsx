@@ -11,15 +11,15 @@ function StartGame() {
 
   const navigator = useNavigate();
 
-  function handleSubmit (){
-    navigator("/play")
+  function handleSubmit (text){
+    navigator("/play", {state : {wordSubmited : text}})
   }
 
 
 
   return (
     <div className='start-game'>
-      <h1 style={{color:"red"}}>Start Game</h1>
+      <h1 className='my-3 text-slate-800 font-bold text-2xl text-center'>Start Game</h1>
       <TextInputFormContainer onSubmit={handleSubmit}/>
     </div>
   )
